@@ -21,10 +21,10 @@ void setup(){
   display.setTextColor(WHITE);
   display.setCursor(0,0);
   display.clearDisplay();
-  display.println("IR Reader by Alex");
-  display.println("V 1.0");
+  display.println("IR Reader by Alex");  // start screen.
+  display.println("V 1.1");
   display.display();
-  delay(1000);
+  delay(500);
   display.clearDisplay();
   display.display();
 }
@@ -35,8 +35,12 @@ void loop(){
         display.setTextColor(WHITE);
         display.setCursor(0,0);
         display.clearDisplay();
-        display.print("Hex:");
-        display.println(results.value, HEX);
+        diplay.print("Hex: ");
+        display.println(results.value, HEX);  // print IR code in Hex
+        display.println();
+        display.println("Bin:");
+        display.println();
+        display.println(results.value, BIN);  // print IR code in Binary
         display.display();
         irrecv.resume();
   }

@@ -38,7 +38,7 @@ void loop(){
         diplay.print("Hex: ");
         display.println(results.value, HEX);  // print IR code in Hex
         display.println();
-        display.println("Bin:");
+        display.println("Binary:");
         display.println();
         display.println(results.value, BIN);  // print IR code in Binary
         display.display();

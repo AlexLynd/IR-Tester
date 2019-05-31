@@ -35,7 +35,7 @@ void loop(){
         display.setTextColor(WHITE);
         display.setCursor(0,0);
         display.clearDisplay();
-        diplay.print("Hex: ");
+        display.print("Hex: ");
         display.println(results.value, HEX);  // print IR code in Hex
         display.println();
         display.println("Binary:");
